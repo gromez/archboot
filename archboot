@@ -38,7 +38,7 @@ the archboot wiki: https://github.com/grm34/archboot/wiki
 # select an option, ask some informations to the user or to get install logs.
 
 # Github url: $_url for sources and $_gh_pages for images
-_url="https://raw.githubusercontent.com/grm34/archboot/${__branch__}"
+_url="https://raw.githubusercontent.com/gromez/archboot/${__branch__}"
 _gh_pages="https://raw.githubusercontent.com/grm34/archboot/gh-pages"
 
 # Shell colors
@@ -241,7 +241,7 @@ if [[ ! -z ${desktop+x} ]]; then
 fi
 
 # Prepare the system
-_clock; _logs; _firmware; _partition; _mounting
+_clock; _logs; _firmware
 _note "system ready! Partitions mounted & swap activated."
 
 # ARCHBOOT SYSTEM INSTALLATION
